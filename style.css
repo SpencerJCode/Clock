@@ -1,0 +1,67 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: inherit;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+}
+/* this global reset was found in an article by Jeff Star, and can be found at
+https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+
+body {
+  background-color: black;
+}
+
+.wholeClock {
+  background-image: url(assets/watchbackground.png);
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-left:400px;
+}
+#face {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 6px ridge; */
+    position: relative;
+    padding-top: 294px;
+    padding-left: 222px;
+  }
+      
+  #minutes, #hour, #seconds {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: top center;
+  }
+      
+  #seconds {
+    background-color: red;
+    height: 78px;
+    width: .5px;
+    transform: rotate(0deg);
+  }
+      
+  #hour {
+    outline: solid 2px rgb(31, 28, 24);
+    background-color: rgb(213, 202, 182);
+    height: 40px;
+    width: 1px;
+    transform: rotate(0deg);
+    border-radius: 50%;
+  }
+      
+  #minutes {
+    background-color: rgba(140, 123, 98, 0.858);
+    overflow:visible;
+    border-bottom: solid rgb(253, 199, 37) 1px;
+    height: 53px;
+    width: 3px;
+    transform: rotate(0deg);
+    border-radius: 50%;
+  }
+  
